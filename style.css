@@ -1,0 +1,262 @@
+img.logo {
+    height: 100px;
+    position: absolute;
+    left: 14px;
+    top: 0;
+}
+
+body, html {
+    border: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #17468b;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.nav {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+*{
+    color: white;
+    line-height: 1.4em;
+}
+
+a{
+    color: #ffce45;
+    text-decoration: none;
+}
+
+.nav a {
+    margin: 0px 15px;
+    color: white;
+    transition: all .3s ease;
+}
+
+
+.nav a:hover, .nav a.active{
+    color: #ffce45;
+
+}
+
+
+.content {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    margin-top: 100px;
+  
+}
+
+.not-loaded header{
+    opacity: 0;
+}
+
+img#lemon-1 {
+    width: 140px;
+    position: absolute;
+    left: 3%;
+    bottom: 34%;
+    animation: float 5s infinite linear;
+    opacity: 1;
+    transition: all .7s ease .5s;
+
+}
+
+img#lemon-2 {
+    width: 220px;
+    position: absolute;
+    right: -5%;
+    bottom: 4%;
+    animation: float 8s infinite linear;
+    opacity: 1;
+    transition: all .7s ease .9s;
+}
+
+img#vector-1 {
+    position: absolute;
+    width: 30%;
+    left: -10%;
+    bottom: -10%;
+    opacity: 1;
+    transition: all .7s ease 1.2s;
+}
+
+img#vector-2 {
+    position: absolute;
+    width: 30%;
+    left: -9%;
+    bottom: -9%;
+    opacity: 1;
+    transition: all .7s ease .9s;
+
+}
+
+
+.not-loaded #lemon-1{
+    opacity: 0;
+}
+.not-loaded #lemon-2{
+    opacity: 0;
+}
+.not-loaded #vector-1{
+    opacity: 0;
+}
+.not-loaded #vector-2{
+    opacity: 0;
+}
+
+h2{
+    color: #ffce45;
+    font-size: 2.2em;
+}
+
+
+
+.text-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 650px;
+    width: 80%;
+    opacity: 1;
+    transition: all .8s ease 1.4s;
+    padding: 0 2em;
+}
+
+.not-loaded .text-content{
+    opacity: 0;
+}
+
+.main-button{transition: all .3s ease;outline: none;margin-top: 12px;width: 290px;height: 46px;font-size: 1em;background: #FBD38B;border: none;border-radius: 10px;font-weight: bold;color: #17468a;cursor: pointer;}
+
+.main-button.disabled{
+    opacity: .65;
+}
+
+
+
+.checkbox{width: 22px;height: 22px;background: white;border-radius: 5px;display: inline-block;position: relative;top: 0.35em;margin-right: 10px;cursor: pointer;}
+
+.checkbox::after{
+    content:  " ";
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 3px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.checkbox.active::after{
+    background: #17468a;
+
+}
+
+.terms{
+    margin-top: 40px;
+}
+
+.terms-done img#lemon-1 {
+    transition: all .9s ease;
+    bottom: 56%;
+}
+
+.terms-done img#lemon-2 {
+    transition: all .9s ease .1s;
+    bottom: 26%;
+    right: -2%;
+}
+
+.terms-done img#vector-1 {
+    transition: all .9s ease .2s;
+    left: -13%;
+    transform: rotate(-10deg);
+}
+
+
+.terms-done img#vector-2 {
+    transition: all .9s ease .3s;
+    left: -12%;
+    transform: rotate(-13deg);
+}
+
+.select-games img#lemon-1 {
+    left: -46%;
+}
+
+.select-games img#lemon-2 {
+    right: -50%;
+}
+
+.select-games img#vector-1 {
+    left: -18%;
+    bottom: -15%;
+}
+
+.select-games img#vector-2 {
+    left: -17%;
+    bottom: -13%;
+}
+
+@keyframes float {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    30% {
+        transform: translate(7px, 3px);
+    }
+    50% {
+        transform: translate(3px, 5px);
+    }
+    70% {
+        transform: translate(0px, 3px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+  }
+  
+
+  @media screen and (max-width: 980px) {
+    #lemon-1, #lemon-2,#vector-1, #vector-2{
+        display: none;
+    }
+
+
+    .nav a {
+        margin: 0px 10px;
+
+    }
+
+    img.logo{
+        left: 0;
+    }
+
+    .nav{right: 10px}
+
+    header{
+        background: #17468a
+    }
+
+  }
