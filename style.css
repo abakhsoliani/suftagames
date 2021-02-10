@@ -239,6 +239,17 @@ h2{
   
 
   @media screen and (max-width: 980px) {
+
+    body{
+        font-size: 12px;
+    }
+
+
+    img.logo{
+        left: 0;
+        top: 10px;
+        height:80px;
+    }
     #lemon-1, #lemon-2,#vector-1, #vector-2{
         display: none;
     }
@@ -247,10 +258,6 @@ h2{
     .nav a {
         margin: 0px 10px;
 
-    }
-
-    img.logo{
-        left: 0;
     }
 
     .nav{right: 10px}
