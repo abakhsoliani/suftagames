@@ -297,7 +297,8 @@ button.main-button:hover {
 .game:hover {
     border-color: #fdcc46c4;
     box-shadow: 0px 0px 14px #00000078;
-    color: white;
+    color: #113973;
+    background: #fdcc46;
 }
 
 

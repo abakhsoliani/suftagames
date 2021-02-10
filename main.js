@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
     $(".main-button").click(function(){
-        if(!$(".main-botton").hasClass("disabled")) {
+        if(!$(".main-button").hasClass("disabled")) {
             $("body").addClass("select-games");
             $(".text-content").remove();
             setTimeout(function(){ $(".games-container").addClass("active") }, 1000);
