@@ -32,7 +32,7 @@ $(document).ready(function(){
       
 
     function getRandomIveNever(){
-        if(ivenever.length==0) "<div class='ivenever-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+        if(ivenever.length==0) return "<div class='ivenever-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
 
         var randNumber = Math.floor(Math.random() * ivenever.length);
         var cardValue = ivenever[randNumber];
