@@ -253,13 +253,13 @@ h2{
     #lemon-1, #lemon-2,#vector-1, #vector-2{
         display: none;
     }
-
-
     .nav a {
         margin: 0px 10px;
 
     }
-
+    .text-content{
+        top: 32%;
+    }
     .nav{right: 10px}
 
     header{
