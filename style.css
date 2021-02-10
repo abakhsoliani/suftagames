@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'ALKDots';
+    src: url('fonts/alkdots-webfont.eot'); /* IE9 Compat Modes */
+    src: url('fonts/alkdots-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/alkdots-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/alkdots-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/alkdots-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/alkdots-webfont.svg#alkdotsregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'BPG Mrgvlovani';
+    src: url('fonts/bpg-mrgvlovani-webfont.eot'); /* IE9 Compat Modes */
+    src: url('fonts/bpg-mrgvlovani-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/bpg-mrgvlovani-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/bpg-mrgvlovani-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/bpg-mrgvlovani-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/bpg-mrgvlovani-webfont.svg#bpg_mrgvlovaniregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'BPG Banner Caps';
+    src: url('fonts/bpg-banner-caps-webfont.eot'); /* IE9 Compat Modes */
+    src: url('fonts/bpg-banner-caps-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/bpg-banner-caps-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/bpg-banner-caps-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/bpg-banner-caps-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/bpg-banner-caps-webfont.svg#bpg_banner_capsregular') format('svg'); /* Legacy iOS */
+}
+
 img.logo {
     height: 100px;
     position: absolute;
@@ -14,6 +44,7 @@ body, html {
     background: #17468b;
     overflow: hidden;
     font-size: 16px;
+    font-family: 'BPG Mrgvlovani';
 }
 
 header {
@@ -35,6 +66,7 @@ header {
 *{
     color: white;
     line-height: 1.4em;
+    font-family: 'BPG Mrgvlovani';
 }
 
 a{
@@ -124,6 +156,9 @@ img#vector-2 {
 h2{
     color: #ffce45;
     font-size: 2.2em;
+    font-family: 'BPG Banner Caps';
+    font-family: 'ALKDots';
+
 }
 
 
@@ -145,13 +180,16 @@ h2{
     opacity: 0;
 }
 
-.main-button{transition: all .3s ease;outline: none;margin-top: 12px;width: 290px;height: 46px;font-size: 1em;background: #FBD38B;border: none;border-radius: 10px;font-weight: bold;color: #17468a;cursor: pointer;}
+.main-button{transition: all .3s ease;outline: none;margin-top: 12px;width: 330px;height: 46px;font-family: BPG Banner Caps;font-size: 1em;background: #FBD38B;border: none;border-radius: 10px;font-weight: bold;color: #17468a;cursor: pointer;padding-top: 3px;box-shadow: 0px 0px 15px rgb(0 0 0 / 4%);}
 
 .main-button.disabled{
     opacity: .65;
 }
 
 
+button.main-button:hover {
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 22%);
+}
 
 .checkbox{width: 22px;height: 22px;background: white;border-radius: 5px;display: inline-block;position: relative;top: 0.35em;margin-right: 10px;cursor: pointer;}
 
