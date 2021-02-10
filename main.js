@@ -13,10 +13,11 @@ $(document).ready(function(){
 
 
     $(".main-button").click(function(){
-        if($(".main-botton").hasClass("disabled")) return;
-        $("body").addClass("select-games");
-        $(".text-content").remove();
-        setTimeout(function(){ $(".games-container").addClass("active") }, 1000);
+        if(!$(".main-botton").hasClass("disabled")) {
+            $("body").addClass("select-games");
+            $(".text-content").remove();
+            setTimeout(function(){ $(".games-container").addClass("active") }, 1000);
+        }
 
     });
 });
