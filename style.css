@@ -513,4 +513,16 @@ button.song-answer {
         background: #17468a
     }
 
+    .songs-row {
+       
+        width: 470px;
+    }
+    .song-category {
+        width: 160px;
+    }
+
+    .song{
+        margin-left: .7em;
+    }
+
   }
