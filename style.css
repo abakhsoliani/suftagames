@@ -514,15 +514,30 @@ button.song-answer {
     }
 
     .songs-row {
-       
-        width: 470px;
+       width: 95%;
+       text-align: center;
     }
     .song-category {
-        width: 160px;
+        width: 90%;
+        height: 3em;
+        float: none;
+        padding-top: 1em;
+        margin-bottom: 0;
+        margin-top: 1.2em;
     }
 
     .song{
-        margin-left: .7em;
+        margin: 0.3em;
+        float: none;
+        width: 1.8em;
+        height: 1.8em;
+        padding-left: 0;
+        padding-top: .3em;
+    }
+
+    .game-container h2{
+        font-size:1.5em;
+        margin-bottom: .5em;
     }
 
   }
