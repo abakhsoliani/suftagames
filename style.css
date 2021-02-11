@@ -327,6 +327,7 @@ button.main-button:hover {
 .game-container {
     width: 100%;
     HEIGHT: 100%;
+    text-align: center;
 }
 
 
@@ -356,6 +357,106 @@ button.main-button:hover {
     font-size: 1.5em;
 }
 
+.songs-row {
+    display: inline-block;
+    text-align: left;
+    width: 860px;
+}
+
+.song-category {
+    width: 280px;
+    text-align: center;
+    background: #0f3a77;
+    color: #fdcc46;
+    height: 5em;
+    margin-bottom: 2em;
+    display: inline-block;
+    float: left;
+    BOX-SIZING: border-box;
+    padding-top: 1.8em;
+    border-radius: 23px;
+    border: 1px solid #fdcc46;
+    box-shadow: 0px 0px 10px #ffffff30;
+    font-family: 'BPG Banner Caps'
+}
+
+.game-container h2 {
+    margin-bottom: 2em;
+}
+
+.song {
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    background: #ffce45;
+    display: inline-block;
+    float: left;
+    margin-left: 2em;
+    border-radius: 50%;
+    BORDER: 1px solid #17468a;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #ffffff59;
+    padding-top: .6em;
+    padding-left: .94em;
+    font-size: 2em;
+    color: #17468a;
+    opacity: .86;
+}
+
+.song:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 15px #fffffff5;
+}
+
+.song.done {
+    opacity: .5;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000073;
+}
+
+.song-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #274d84;
+    padding: 2em;
+    text-align: center;
+    border-radius: 2em;
+}
+
+
+button.song-answer {
+    transition: all .3s ease;
+    outline: none;
+    margin-top: 12px;
+    width: 330px;
+    height: 46px;
+    font-family: BPG Banner Caps;
+    font-size: 1em;
+    background: #264d84;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fcd28b;
+    border: 1px solid;
+    cursor: pointer;
+    padding-top: 3px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 4%);
+    visibility: hidden;
+}
+
+
+.played button.song-answer {
+    visibility: visible;
+}
 @keyframes float {
     0% {
       transform: translate(0px, 0px);
