@@ -161,7 +161,7 @@ var songsList = [
 $(document).ready(function(){
     $('body').removeClass("not-loaded");
     var current_game = 0;
-
+    var songLimit = 0;
 
     
       
@@ -182,7 +182,7 @@ $(document).ready(function(){
 
 
         var playSongs = [];
-
+        songLimit = 16;
         if(songsList.length<4) return "<div class='ivenever-card'>სამწუხაროდ მეტი სიმღერა აღარ გვაქვს<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
         for(var i = 0; i<4; i++){           
             var randNumber = Math.floor(Math.random() * songsList.length);
@@ -207,6 +207,12 @@ $(document).ready(function(){
             string +="</div>";
         });
         
+        for(var i = 0; i<playSongs.length; i++){
+            if(playSongs[i].songs.length<4) {
+                playSongs.splice(i, 1);
+                i--;
+            }
+        }
         songsList = songsList.concat(playSongs);
 
 
@@ -220,7 +226,7 @@ $(document).ready(function(){
 
     function openSongPopup(name,file){
         var string = "<div class='overlay'>";
-        string +="<div data-name='"+name+"' class='song-popup'>დაიწყე მოსმენა, როცა ვინმე მიხვდება სიმღერას დააჭირე პაუზას<br> თუ გამოიცნო ყველა სვამს მის გარდა, თუ არა თვითონ სვამს!<br><br> <button class='main-button play'>დაწყება</button><br><button class='song-answer'>პასუხის ნახვა</button> </div>";
+        string +="<div data-name='"+name+"' class='song-popup'>დაიწყე მოსმენა, როცა ვინმე მიხვდება სიმღერას დააჭირე პაუზას<br> თუ გამოიცნო ყველა სვამს მის გარდა, თუ არა თვითონ სვამს!<br><br> <button class='main-button play'>დაწყება</button><br><button class='song-answer secondary-btn'>პასუხის ნახვა</button> </div>";
         
         string+="<audio id='audio'><source src='"+file+"' type='audio/mpeg'></audio></div>";
         return string;
@@ -228,6 +234,12 @@ $(document).ready(function(){
 
     function getSongAnswer(){
         return string = "პასუხი იყო " +$('.song-popup').data('name') + "<br> <button class='main-button exit-play'>სხვა სიმღერის არჩევა</button>";
+    }
+
+
+    function getSongRefreshText(){
+        return string = "ეს იყო ბოლო სიმღერა, პასუხი იყო " +$('.song-popup').data('name') + "<br>  შეგიძლია სხვა სიმღერები ჩატვირთო ან სხვა თამაში აირჩიო <br><button class='main-button songs-refresh'>სხვა სიმღერების ჩარტვირთვა</button><br><button class='secondary-btn other-games'>სხვა თამაშების ჩატვირთვა</button>";
+
     }
 
     $(".terms .checkbox").click(function(){
@@ -310,7 +322,13 @@ $(document).ready(function(){
        
             playStatus = 1;
             document.getElementById("audio").play();
-            $(".song-popup").html(getSongAnswer());
+            songLimit--;
+            if(songLimit==0){
+                $(".song-popup").html(getSongRefreshText());
+            } else {
+                $(".song-popup").html(getSongAnswer());
+            }
+
 
 
     });
@@ -321,7 +339,30 @@ $(document).ready(function(){
             playStatus = 0;
             document.getElementById("audio").pause();
             $(".overlay").remove();
+          
        
+    });
+
+    $("body").on("click",".song-popup .main-button.songs-refresh", function(){
+        
+        playStatus = 0;
+        document.getElementById("audio").pause();
+        $(".overlay").remove();
+        $(".game-container").html(getSongContent());
+
+   
+    });
+
+    $("body").on("click",".song-popup .other-games", function(){
+        
+        playStatus = 0;
+        document.getElementById("audio").pause();
+        $(".overlay").remove();
+        $(".game-container").text('');
+        $(".game-container").removeClass('active');
+        $(".games-container").addClass('active');
+
+   
     });
 
    

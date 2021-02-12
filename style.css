@@ -433,7 +433,7 @@ button.main-button:hover {
 }
 
 
-button.song-answer {
+button.secondary-btn {
     transition: all .3s ease;
     outline: none;
     margin-top: 12px;
@@ -450,9 +450,11 @@ button.song-answer {
     cursor: pointer;
     padding-top: 3px;
     box-shadow: 0px 0px 15px rgb(0 0 0 / 4%);
-    visibility: hidden;
 }
 
+button.song-answer {
+    visibility: hidden;
+}
 
 .played button.song-answer {
     visibility: visible;
