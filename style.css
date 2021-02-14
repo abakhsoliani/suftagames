@@ -50,6 +50,7 @@ body, html {
 header {
     height: 100px;
     width: 100%;
+    z-index: 2;
     position: fixed;
     top: 0;
     opacity: 1;
@@ -542,7 +543,7 @@ button.song-answer {
         font-size: 2em
     }
     img.logo{
-        left: 0;
+        left: 30px;
         top: 10px;
         height:80px;
     }
@@ -599,4 +600,67 @@ button.song-answer {
     .main-button {
         width: 240px;
     }    
+    .nav {
+        position: absolute;
+        height: 100vh;
+        transform: none;
+        transition: all .5s ease;
+        top: 0;
+        right: -100%;
+        box-sizing: border-box;
+        background: #0b2d5f;
+        z-index: 26;
+        box-shadow: 0px 0px 15px #000000a6;
+        padding-top: 9em;
+        padding-left: 3em;
+        padding-right: 4em;
+        box-sizing: border-box;
+    }
+    
+    .nav.active {
+        right: 0;
+    }
+    
+    .nav a {
+        display: block;
+        margin-bottom: 2em;
+        text-align: right;
+    }
+    
+    .burger {
+        position: absolute;
+        z-index: 35;
+        width: 30px;
+        height: 30px;
+        right: 5em;
+        cursor: pointer;
+        top: 3em;
+    }
+
+    .burger span {
+        position: absolute;
+        top: 14px;
+        height: 2px;
+        width: 100%;
+        background: white;
+    }
+
+
+    .burger span::before{
+        content: " ";
+        position: absolute;
+        top: 12px;
+        height: 2px;
+        width: 100%;
+        background: white;
+    }
+
+    .burger span::after{
+        content: " ";
+        position: absolute;
+        top: -12px;
+        height: 2px;
+        width: 100%;
+        background: white;
+    }
   }

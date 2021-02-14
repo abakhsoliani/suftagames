@@ -302,10 +302,12 @@ $(document).ready(function(){
     var songLimit = 0;
 
     
-      
-
+    $(".burger").click(function(){
+        $(".nav").toggleClass("active");
+    });
+    
     function getRandomIveNever(){
-        if(ivenever.length==0) return "<div class='ivenever-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+        if(ivenever.length==0) return "<div class='ivenever-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით მთავარ გვერდზე <button class='secondary-btn other-games'>სხვა თამაშების არჩევა</button>/div>";
 
         var randNumber = Math.floor(Math.random() * ivenever.length);
         var cardValue = ivenever[randNumber];
@@ -318,7 +320,7 @@ $(document).ready(function(){
 
 
     function getMostLikelyContent(){
-        if(mostlikely.length==0) return "<div class='mostlikely-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+        if(mostlikely.length==0) return "<div class='mostlikely-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით მთავარ გვერდზე <button class='secondary-btn other-games'>სხვა თამაშების არჩევა</button>/div>";
 
         var randNumber = Math.floor(Math.random() * mostlikely.length);
         var cardValue = mostlikely[randNumber];
@@ -334,7 +336,7 @@ $(document).ready(function(){
 
         var playSongs = [];
         songLimit = 16;
-        if(songsList.length<4) return "<div class='ivenever-card'>სამწუხაროდ მეტი სიმღერა აღარ გვაქვს<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+        if(songsList.length<4) return "<div class='ivenever-card'>სამწუხაროდ მეტი სიმღერა აღარ გვაქვს<br>ახალი თამაშის ასარჩევად დაბრუნდით მთავარ გვერდზე<button class='secondary-btn other-games'>სხვა თამაშების არჩევა</button></div>";
         for(var i = 0; i<4; i++){           
             var randNumber = Math.floor(Math.random() * songsList.length);
             playSongs.push(songsList[randNumber]);
@@ -389,12 +391,12 @@ $(document).ready(function(){
 
 
     function getSongRefreshText(){
-        return string = "ეს იყო ბოლო სიმღერა, პასუხი იყო " +$('.song-popup').data('name') + "<br>  შეგიძლია სხვა სიმღერები ჩატვირთო ან სხვა თამაში აირჩიო <br><button class='main-button songs-refresh'>სხვა სიმღერების ჩარტვირთვა</button><br><button class='secondary-btn other-games'>სხვა თამაშების ჩატვირთვა</button>";
+        return string = "ეს იყო ბოლო სიმღერა, პასუხი იყო " +$('.song-popup').data('name') + "<br>  შეგიძლია სხვა სიმღერები ჩატვირთო ან სხვა თამაში აირჩიო <br><button class='main-button songs-refresh'>სხვა სიმღერების ჩარტვირთვა</button><br><button class='secondary-btn other-games'>სხვა თამაშების არჩევა</button>";
 
     }
 
     function getNextDrinkCard(){
-        if(drinkCards.length==0) return "<div class='mostlikely-card active'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+        if(drinkCards.length==0) return "<div class='mostlikely-card active'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით მთავარ გვერდზე <button class='secondary-btn other-games'>სხვა თამაშების ჩატვირთვა</button></div>";
 
         var randNumber = Math.floor(Math.random() * drinkCards.length);
         var cardValue = drinkCards[randNumber];
@@ -572,10 +574,10 @@ $(document).ready(function(){
    
     });
 
-    $("body").on("click",".song-popup .other-games", function(){
+    $("body").on("click"," .other-games", function(){
         
         playStatus = 0;
-        document.getElementById("audio").pause();
+        if(document.getElementById("audio"))document.getElementById("audio").pause();
         $(".overlay").remove();
         $(".game-container").text('');
         $(".game-container").removeClass('active');
