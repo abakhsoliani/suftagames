@@ -1,6 +1,6 @@
 var rules = [
     'ეს თამაში ცნობილი "მე არასდროს" შებრუნებული ვარიანტია <br> თუ მოცემულ სიტტუაციაში ყოფილხარ აუცილებლად სვამ!',
-    '',
+    'ყოველ ჯერზე ამოვა პირობა, ვისაც თვლით, რომ ყველაზე მეტად ემთხვევა პირობას <br> იმისკენ გაიშვირეთ თითი, ვინც ყველაზე მეტ თითს მიიღებს სვამს',
     '',
     'გამოიცანი სიმღერა სასურველი კატეგორიიდან<br> ან დალიე!'
 ]
@@ -82,6 +82,30 @@ var ivenever = [
     'არ მომიპარავს ბარიდან ეულად მიგდებული კოქტეილი',
     'არ დამიყრია კლუბის ტვალეტში'
 
+];
+
+
+var mostlikely = [
+    'ვინ მოკლავს ადამიანს?',
+
+    'ვინ უყურებს რომანტიკულ ფილმებს',
+    
+    'ვინ გათხოვდება პირველი',
+    
+    'ვინ არის სადისტი',
+    
+    'ვინ იბუტება ყველაზე სულელური მიზეზების გამო',
+    
+    'ვიბ არის სულ ბედნიერი',
+    
+    'ვინ უფრო მეტად შეარცხვენს მეგობარს საზოგადოებაში',
+    
+    'ვის არ უყვარს ბანაობა',
+    
+    'ვინ იცოცხლებს ყველაზე დიდხანს',
+    
+    
+    'ვინ იქნება ყველაზე მდიდარი'
 ];
 
 var songsList = [
@@ -174,7 +198,20 @@ $(document).ready(function(){
 
         ivenever.splice(randNumber, 1);
         
-        return "<div class='ivenever-card'><div>"+cardValue+"</div><button class='main-button'>შემდეგი პირობა</button></div>";
+        return "<div class='ivenever-card'><div>მე არასდროს <br>"+cardValue+"</div><button class='main-button'>შემდეგი პირობა</button></div>";
+
+    }
+
+
+    function getMostLikelyContent(){
+        if(mostlikely.length==0) return "<div class='mostlikely-card'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+
+        var randNumber = Math.floor(Math.random() * mostlikely.length);
+        var cardValue = mostlikely[randNumber];
+
+        mostlikely.splice(randNumber, 1);
+        
+        return "<div class='mostlikely-card'><div>შენი აზრით,<br> "+cardValue+"</div><button class='main-button'>შემდეგი პირობა</button></div>";
 
     }
 
@@ -277,6 +314,15 @@ $(document).ready(function(){
 
     });
 
+
+    $("#mostlikely").click(function(){
+        current_game = 1;
+        $(".games-container").removeClass("active");
+        $(".rules").html(rules[current_game]);
+        setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
+
+    });
+
     $(".main-button.continue").click(function(){
         $(".rules-container").removeClass("active");
         if(current_game == 0){
@@ -284,6 +330,9 @@ $(document).ready(function(){
             setTimeout(function(){ $(".ivenever-card").addClass("active"); }, 600);
         } else if(current_game==3){
             $(".game-container").html(getSongContent());
+        } else if(current_game==1){
+            $(".game-container").html(getMostLikelyContent());
+            setTimeout(function(){ $(".mostlikely-card").addClass("active"); }, 600);
         }
     });
 
@@ -292,6 +341,11 @@ $(document).ready(function(){
         $(".game-container").html(getRandomIveNever());
         setTimeout(function(){ $(".ivenever-card").addClass("active"); }, 600);
       });
+
+    $(".content").on("click",".mostlikely-card .main-button", function(){
+        $(".game-container").html(getMostLikelyContent());
+        setTimeout(function(){ $(".mostlikely-card").addClass("active"); }, 600);
+    });
 
 
     $(".game-container").on("click",".song", function(){
