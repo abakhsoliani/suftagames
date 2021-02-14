@@ -459,6 +459,53 @@ button.song-answer {
 .played button.song-answer {
     visibility: visible;
 }
+
+
+.drinkcard-container {
+    position: relative;
+    top: 2em;
+}
+
+.drink-card {
+    width: 230px;
+    height: 350px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border: 5px solid #323333;
+    border-radius: 25px;
+}
+
+.color-a *, .color-g *{
+    color: #a4181b;
+}
+
+.color-y *, .color-j * {
+    color: black;
+}
+
+.drink-card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drink-card span {
+    position: absolute;
+    font-size: 32px;
+    left: 15px;
+    top: 11px;
+}
+
+.drink-card span:nth-child(2) {
+    left: auto;
+    right: 15px;
+    transform: rotate(180deg);
+    bottom: 11px;
+}
+
 @keyframes float {
     0% {
       transform: translate(0px, 0px);
@@ -542,4 +589,14 @@ button.song-answer {
         margin-bottom: .5em;
     }
 
+
+    .drink-card {
+        height: 320px;
+    }    
+    .drinkcard-container {
+        top: -1em;
+    }
+    .main-button {
+        width: 240px;
+    }    
   }

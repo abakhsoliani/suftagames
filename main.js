@@ -1,7 +1,7 @@
 var rules = [
     'ეს თამაში ცნობილი "მე არასდროს" შებრუნებული ვარიანტია <br> თუ მოცემულ სიტტუაციაში ყოფილხარ აუცილებლად სვამ!',
     'ყოველ ჯერზე ამოვა პირობა, ვისაც თვლით, რომ ყველაზე მეტად ემთხვევა პირობას <br> იმისკენ გაიშვირეთ თითი, ვინც ყველაზე მეტ თითს მიიღებს სვამს',
-    '',
+    'თამაშის წესები მარტივია, ყველა კარტს თავისი დალევი წესი აქვს<br>შეასრულეთ კარტზე ამოსული პირობები',
     'გამოიცანი სიმღერა სასურველი კატეგორიიდან<br> ან დალიე!'
 ]
 
@@ -182,6 +182,120 @@ var songsList = [
 ];
 
 
+
+var drinkCards = [
+    {
+        card: "6", color: "a" , task: "შენგან მარჯვენა სვამს"
+    },
+    {
+        card: "6", color: "g" , task: "შენგან მარჯვენა სვამს"
+    },
+    {
+        card: "Joker", color: "y" , task: "შენგან მარჯვენა სვამს"
+    },
+    {
+        card: "Joker", color: "j" , task: "შენგან მარჯვენა სვამს"
+    },
+    {
+        card: "7", color: "j" , task: "შენგან მარცხენა სვამს"
+    },
+    {
+        card: "7", color: "g" , task: "შენგან მარცხენა სვამს"
+    },
+    {
+        card: "7", color: "y" , task: "შენგან მარცხენა სვამს"
+    },
+    {
+        card: "7", color: "a" , task: "შენგან მარცხენა სვამს"
+    },
+    {
+        card: "8", color: "j" , task: "Დალევის დროს რაღაც ქენი"
+    },
+    {
+        card: "8", color: "g" , task: "Დალევის დროს რაღაც ქენი"
+    },
+    {
+        card: "8", color: "y" , task: "Დალევის დროს რაღაც ქენი"
+    },
+    {
+        card: "8", color: "a" , task: "Დალევის დროს რაღაც ქენი"
+    },
+    {
+        card: "9", color: "j" , task: "Ირჩევ დალევის პარტნიორს"
+    },
+    {
+        card: "9", color: "g" , task: "Ირჩევ დალევის პარტნიორს"
+    },
+    {
+        card: "9", color: "y" , task: "Ირჩევ დალევის პარტნიორს"
+    },
+    {
+        card: "9", color: "a" , task: "Ირჩევ დალევის პარტნიორს"
+    },
+    {
+        card: "10", color: "j" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "10", color: "g" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "10", color: "y" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "10", color: "a" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "J", color: "j" , task: "ყველა ბიჭი სვამს"
+    },
+    {
+        card: "J", color: "g" , task: "ყველა ბიჭი სვამს"
+    },
+    {
+        card: "J", color: "y" , task: "ყველა ბიჭი სვამს"
+    },
+    {
+        card: "J", color: "a" , task: "ყველა ბიჭი სვამს"
+    },
+    {
+        card: "Q", color: "j" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "Q", color: "g" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "Q", color: "y" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "Q", color: "a" , task: "ყველა გოგო სვამს"
+    },
+    {
+        card: "K", color: "j" , task: "გროვდება ჭიქებში და ბოლო კაროლი სვამს"
+    },
+    {
+        card: "K", color: "g" , task: "გროვდება ჭიქებში და ბოლო კაროლი სვამს"
+    },
+    {
+        card: "K", color: "y" , task: "გროვდება ჭიქებში და ბოლო კაროლი სვამს"
+    },
+    {
+        card: "K", color: "a" , task: "გროვდება ჭიქებში და ბოლო კაროლი სვამს"
+    },
+    {
+        card: "A", color: "j" , task: "განსხვავებული"
+    },
+    {
+        card: "A", color: "g" , task: "განსხვავებული"
+    },
+    {
+        card: "A", color: "y" , task: "განსხვავებული"
+    },
+    {
+        card: "A", color: "a" , task: "განსხვავებული"
+    },
+    
+];
+
+
 $(document).ready(function(){
     $('body').removeClass("not-loaded");
     var current_game = 0;
@@ -279,6 +393,20 @@ $(document).ready(function(){
 
     }
 
+    function getNextDrinkCard(){
+        if(drinkCards.length==0) return "<div class='mostlikely-card active'>ეს იყო ბოლო დავალება<br>ახალი თამაშის ასარჩევად დაბრუნდით <a href='/'>მთავარ გვერდზე</a></div>";
+
+        var randNumber = Math.floor(Math.random() * drinkCards.length);
+        var cardValue = drinkCards[randNumber];
+
+        drinkCards.splice(randNumber, 1);
+        
+        return "<div class='drinkcard-container'><div class='drink-card color-"+cardValue.color+"'><span>"+cardValue.card+"</span><span>"+cardValue.card+"</span><img src='images/"+cardValue.color+".png'></div><p>"+cardValue.task+"<br><button class='main-button'>შემდეგი კარტი</button></div></p></div>"
+    }
+
+    //---------------------------------------------------------------------MAIN PAGE
+    //-----------------------------
+    //-----------------------------
     $(".terms .checkbox").click(function(){
         $(".terms .checkbox").toggleClass("active");
         $("body").toggleClass("terms-done");
@@ -296,6 +424,11 @@ $(document).ready(function(){
         }
 
     });
+
+
+    //---------------------------------------------------------------------GAME BUTTONS
+    //-----------------------------
+    //-----------------------------
 
     $("#ivenever").click(function(){
         current_game = 0;
@@ -323,6 +456,21 @@ $(document).ready(function(){
 
     });
 
+    $("#drinkcard").click(function(){
+        current_game = 2;
+        $(".games-container").removeClass("active");
+        $(".rules").html(rules[current_game]);
+        setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
+
+    });
+
+
+
+    //---------------------------------------------------------------------RULE BUTTON
+    //-----------------------------
+    //-----------------------------
+
+
     $(".main-button.continue").click(function(){
         $(".rules-container").removeClass("active");
         if(current_game == 0){
@@ -333,10 +481,17 @@ $(document).ready(function(){
         } else if(current_game==1){
             $(".game-container").html(getMostLikelyContent());
             setTimeout(function(){ $(".mostlikely-card").addClass("active"); }, 600);
+        } else if(current_game==2){
+            $(".game-container").html(getNextDrinkCard());
+            setTimeout(function(){ $(".drinkcard-container").addClass("active"); }, 600);
         }
     });
 
 
+
+    //---------------------------------------------------------------------PLAY NEXT BUTTONS
+    //-----------------------------
+    //-----------------------------
     $(".content").on("click",".ivenever-card .main-button", function(){
         $(".game-container").html(getRandomIveNever());
         setTimeout(function(){ $(".ivenever-card").addClass("active"); }, 600);
@@ -347,7 +502,16 @@ $(document).ready(function(){
         setTimeout(function(){ $(".mostlikely-card").addClass("active"); }, 600);
     });
 
+    $(".content").on("click",".drinkcard-container .main-button", function(){
+        $(".game-container").html(getNextDrinkCard());
+        setTimeout(function(){ $(".drinkcard-container").addClass("active"); }, 600);
+    });
 
+
+
+    //---------------------------------------------------------------------SONG PLAYER BUTTONS
+    //-----------------------------
+    //-----------------------------
     $(".game-container").on("click",".song", function(){
         if($(this).hasClass('done')) return;
         var name = $(this).data("name");
@@ -355,6 +519,7 @@ $(document).ready(function(){
         $(this).addClass("done");
         $('body').append(openSongPopup(name,file));
     });
+
 
     var playStatus = 0;
     $("body").on("click",".song-popup .main-button.play", function(){
