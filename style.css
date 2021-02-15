@@ -418,6 +418,7 @@ button.main-button:hover {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
     height: 100%;
     background: #00000073;
 }
@@ -507,6 +508,20 @@ button.song-answer {
     bottom: 11px;
 }
 
+.go-back {
+    position: fixed;
+    top: 104px;
+    left: 2.6em;
+    color: #ffd500;
+    font-size: .8em;
+    cursor: pointer;
+    display: none;
+}
+
+.go-back.active{
+    display:block;
+}
+
 @keyframes float {
     0% {
       transform: translate(0px, 0px);
@@ -592,10 +607,10 @@ button.song-answer {
         height: 320px;
     }    
     .drinkcard-container {
-        top: -1em;
+        top: 1.6em;
     }
-    .main-button {
-        width: 240px;
+    .main-button, button.secondary-btn{
+        width: 240px ;
     }    
     .nav {
         position: absolute;
@@ -638,7 +653,7 @@ button.song-answer {
         position: absolute;
         top: 14px;
         height: 2px;
-        width: 100%;
+        width: 30px;
         background: white;
     }
 
@@ -648,8 +663,9 @@ button.song-answer {
         position: absolute;
         top: 12px;
         height: 2px;
-        width: 100%;
+        width: 30px;
         background: white;
+        transition: all .3s ease;
     }
 
     .burger span::after{
@@ -657,7 +673,32 @@ button.song-answer {
         position: absolute;
         top: -12px;
         height: 2px;
-        width: 100%;
+        width: 30px;
         background: white;
+        transition: all .3s ease;
+
+    }
+
+    .burger.active span::after{
+        transform: rotate(45deg);
+        top:0px
+    }
+
+    .burger.active span::before{
+         transform: rotate(-45deg);
+         top:0px
+    }
+
+    .burger.active span{
+        width: 0;
+    }
+
+    .go-back {
+        position: fixed;
+        top: 104px;
+    }
+
+    .game-container{
+        margin-top: 1.5em;
     }
   }
