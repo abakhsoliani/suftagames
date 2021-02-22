@@ -217,11 +217,17 @@ var songsList = [
         category: 'ქართული ძველი', 
         songs : 
         [
-            {name :"შენ დაგეძებ დილაა თუ ბინდია", file: 'shendagedzeb.mp3', youtube:"",description:""}, 
-            {name :"იმღერე რამე", file: 'imgererame.mp3', youtube:"",description:""}, 
-            {name :"ნანინა გერჩივნოს", file: 'nanina.mp3', youtube:"",description:""}, 
-            {name :"გოგოვ გოგოვ შავთვალა", file: 'gogovgogovshavtvala.mp3', youtube:"",description:""}, 
+            {name :"მუხამბაზი Mukhambazi - ჯ. კახიძე, ვ. კახიძე, გ. დოლიძე", file: 'მუხამბაზი Mukhambazi - ჯ. კახიძე, ვ. კახიძე, გ. დოლიძე - J. Kakhidze, V. Kakhidze, G.Dolidze.mp3', youtube:"",description:""}, 
+            {name :"ივერია - იმღერე რამე (1975)", file: 'ივერია - იმღერე რამე (1975).mp3', youtube:"",description:""}, 
+            {name :"ჩემი საქართველო აქ არის ", file: 'ჩემი საქართველო აქ არის (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"საზამთრო Watermelon - ჯანსუღ კახიძე & გოგი დოლიძე", file: 'საზამთრო Watermelon - ჯანსუღ კახიძე & გოგი დოლიძე Jansugh Kakhidze & Gogi Dolidze.mp3', youtube:"",description:""}, 
+            {name :"07 - ვია 75 პირველი სიყვარული 1982 via 75 First Love", file: '07 - ვია 75 პირველი სიყვარული 1982 via 75 First Love.mp3', youtube:"",description:""}, 
+            {name :"Aleksandre Basilaia Gza Dagviloce", file: 'Aleksandre Basilaia Gza Dagviloce )) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"მაყვალა & არჩილ ჩიხლაძეები - კართან მოდგა შემოდგომა (1976) ", file: 'მაყვალა & არჩილ ჩიხლაძეები - კართან მოდგა შემოდგომა (1976).mp3', youtube:"",description:""}, 
+            {name :"რომა რცხილაძე ნატვრის ხე", file: 'რომა რცხილაძე ნატვრის ხე.mp3', youtube:"",description:""}, 
+
         ]
+        
     },
     {
         category: 'ქართული ახალი', 
@@ -229,59 +235,144 @@ var songsList = [
         [
             {name :"ლექს სენი - ხელები მაღლა", file: 'lexsenixelebimagla.mp3', youtube:"",description:""}, 
             {name :"უცნობი - კუნძული", file: 'ucnobi-kundzuli.mp3', youtube:"",description:""}, 
-            {name :"გიორგი ხუციშვილი - ზღვა ღელავს", file: 'zgvagelavs.mp3', youtube:"",description:""}, 
+            {name :"დათო გომართელი - გატეხილი გული", file: 'დათო გომართელი - გატეხილი გული Dato Gomarteli - Gatexili Guli.mp3', youtube:"",description:""}, 
             {name :"ირმა სოხაძე - დრო როგორ გევიდაა", file: 'irmasoxa.mp3', youtube:"",description:""}, 
+            {name :"ლელა წურწუმია - ღამის სიჩუმე გაფანტე", file: 'ლელა წურწუმია - ღამის სიჩუმე გაფანტე Lela Tsurtsumia - Ghamis Sichume Gafante.mp3', youtube:"",description:""}, 
+            {name :"ძებნილები & ჯერონიმო - ჩემი ძმები", file: 'ძებნილები & ჯერონიმო - ჩემი ძმები.mp3', youtube:"",description:""}, 
+            {name :"არა - კი", file: 'არა - კი.mp3', youtube:"",description:""}, 
+            {name :"Nini Karseladze - Chemi qalaqi", file: 'Nini Karseladze - Chemi qalaqi.mp3', youtube:"",description:""}, 
+            {name :"Mao & Stefane [Xelebi]", file: 'Mao & Stefane [Xelebi] (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Bakur Burduli - Fetqavs ", file: 'Bakur Burduli - Fetqavs (HD) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Dato - Megobrebtan Ertad", file: 'Dato - Megobrebtan Ertad (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Giga Miqaberidze ft. Kato Piramidebi", file: 'Giga Miqaberidze ft. Kato Piramidebi.wmv.mp3', youtube:"",description:""}, 
         ]
     },
     {
         category: 'როკი', 
         songs : 
         [
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
+            {name :"Queen - Radio Ga Ga", file: 'Queen - Radio Ga Ga (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"The Rolling Stones - (I Can't Get No) Satisfaction", file: "The Rolling Stones - (I Can't Get No) Satisfaction (Official Lyric Video).mp3", youtube:"",description:""}, 
+            {name :"Prince - Purple Rain ", file: 'Prince - Purple Rain (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Eagles - Hotel California", file: 'Eagles - Hotel California.mp3', youtube:"",description:""}, 
+            {name :"Black Dog Led Zeppelin Lyrics", file: 'Black Dog Led Zeppelin Lyrics.mp3', youtube:"",description:""}, 
+            {name :"ACDC - Highway to Hell ", file: 'ACDC - Highway to Hell (Official Video).mp3', youtube:"",description:""}, 
+            {name :"Aerosmith - Crazy", file: 'Aerosmith - Crazy (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Nirvana - Come As You Are", file: 'Nirvana - Come As You Are (mp3cut.net).mp3', youtube:"",description:""}, 
+
         ]
     },
     {
-        category: 'რეპი', 
+        category: 'ჰიპ ჰოპი', 
         songs : 
         [
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
+            {name :"Nas - I Can", file: 'Nas - I Can (Official HD Video).mp3', youtube:"",description:""}, 
+            {name :"Puff Daddy", file: 'Puff Daddy [feat (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Biggie Smalls - Hypnotize ", file: 'Biggie Smalls - Hypnotize (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"2pac feat Dr", file: '2pac feat Dr (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"50 Cent - Window Shopper ", file: '50 Cent - Window Shopper (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Mattafix - Big City Life", file: 'Mattafix - Big City Life.mp3', youtube:"",description:""}, 
+            {name :"Outkast - Ms ჟეკსონ", file: 'Outkast - Ms (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Afroman - Because I Got High", file: 'Afroman - Because I Got High (Official Video).mp3', youtube:"",description:""},
+            {name :"სნუუპდოოოოგ და დრე ", file: 'Dr (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Eminem - Mockingbird", file: 'Eminem - Mockingbird (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Kendrick Lamar - HUMBLE", file: 'Kendrick Lamar - HUMBLE (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Wu-Tang Clan - C.R.E.A.M", file: 'Wu-Tang Clan - C.R.E.A.M. (Official Video).mp3', youtube:"",description:""},
         ]
     },
     {
-        category: 'პოპი ძველი', 
+        category: 'R&B, Soul', 
         songs : 
         [
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
+            {name :"Marvin Gaye - Lets get it on", file: 'Marvin Gaye - Lets get it on.mp3', youtube:"",description:""}, 
+            {name :"James Brown - It's A Man's Man's Man's World ", file: "James Brown - It's A Man's Man's Man's World (Official Video).mp3", youtube:"",description:""}, 
+            {name :"Stevie Wonder I Just Called To Say I Love You", file: 'Stevie Wonder I Just Called To Say I Love You (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Michael Jackson - Billie Jean", file: 'Michael Jackson - Billie Jean (Official Video).mp3', youtube:"",description:""}, 
+            {name :"Sade - Smooth Operator", file: 'Sade - Smooth Operator - Official - 1984.mp3', youtube:"",description:""}, 
+            {name :"Barry White Never Never Gonna Give You Up Lyrics", file: 'Barry White Never Never Gonna Give You Up Lyrics.mp3', youtube:"",description:""}, 
+            {name :"Alicia Keys - Fallin'", file: "Alicia Keys - Fallin' (Official Video) (mp3cut.net).mp3", youtube:"",description:""},
+            {name :"Bobby Caldwell - What You Won't Do for Love ", file: "Bobby Caldwell - What You Won't Do for Love (Album Version).mp3", youtube:"",description:""}, 
+            {name :"George Michael - Careless Whisper", file: 'George Michael - Careless Whisper (Official Video).mp3', youtube:"",description:""}, 
+
         ]
     },
     {
-        category: 'პოპი ახალი', 
+        category: '90-იანები', 
         songs : 
         [
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
+            {name :"Ricky Martin - Livin' La Vida Loca", file: "Ricky Martin - Livin' La Vida Loca.mp3", youtube:"",description:""}, 
+            {name :"Britney Spears -  ჰით მი ბებე ვან მორ თაიმ", file: 'Britney Spears -  (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Las Ketchup - The Ketchup Song (Asereje) ", file: 'Las Ketchup - The Ketchup Song (Asereje) (Spanglish Version) (Official Video).mp3', youtube:"",description:""}, 
+            {name :"Barry White - Let The Music Play", file: 'Barry White - Let The Music Play.mp3', youtube:"",description:""}, 
+            {name :"Destiny's Child - Survivor (Official Music Video) ", file: "Destiny's Child - Survivor (Official Music Video) ft (mp3cut.net).mp3", youtube:"",description:""}, 
+            {name :"NSYNC - Bye Bye Bye ", file: 'NSYNC - Bye Bye Bye (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Backstreet Boys - Everybody (Backstreet's Back) ", file: "Backstreet Boys - Everybody (Backstreet's Back) (Official Video) (mp3cut.net).mp3", youtube:"",description:""}, 
+            {name :"The Cardigans - Lovefool ", file: 'The Cardigans - Lovefool (Official Music Video).mp3', youtube:"",description:""}, 
+            {name :"Modjo - Lady (Hear Me Tonight)", file: 'Modjo - Lady (Hear Me Tonight) (Official Video).mp3', youtube:"",description:""}, 
+            {name :"Mr პერზიდენტ კოკო ჯამბო", file: 'Mr (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Haddaway - What Is Love", file: 'Haddaway - What Is Love [Official] (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Bomfunk MC's - Freestyler ", file: "Bomfunk MC's - Freestyler (Video Original Version).mp3", youtube:"",description:""}, 
+            {name :"Cher - Strong Enough ", file: 'Cher - Strong Enough (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            
         ]
     },
     {
-        category: 'იტალიური', 
+        category: 'სიყვარულზე', 
         songs : 
         [
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
-            {name :"მაგარი სიმღერა", file: 'file', youtube:"",description:""}, 
+            {name :"Elton John - Can You Feel The Love Tonight", file: 'Elton John - Can You Feel The Love Tonight (Lyrics) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Elvis Presley - Can't Help Falling In Love", file: "Elvis Presley - Can't Help Falling In Love (Audio).mp3", youtube:"",description:""}, 
+            {name :"(Everything I Do) I Do It For You", file: '(Everything I Do) I Do It For You (Official Music Video).mp3', youtube:"",description:""}, 
+            {name :"John Legend - All of Me ", file: 'John Legend - All of Me (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"James Blunt - Goodbye My Lover", file: 'James Blunt - Goodbye My Lover [OFFICIAL VIDEO] (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Celine Dion - My Heart Will Go On", file: 'Celine Dion - My Heart Will Go On (HD).mp3', youtube:"",description:""}, 
+            {name :"Mariah Carey - Without You", file: 'Mariah Carey - Without You (Live Video Version) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON", file: "NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON (mp3cut.net).mp3", youtube:"",description:""}, 
+            {name :"Joe Cocker - You Are So Beautiful", file: 'Joe Cocker - You Are So Beautiful (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Whitney Houston - I Will Always Love You", file: 'Whitney Houston - I Will Always Love You (Official 4K Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Aerosmith - I Don't Want to Miss a Thing", file: "Aerosmith - I Don't Want to Miss a Thing (Official HD Video).mp3", youtube:"",description:""}, 
+            {name :"The Beatles - All My Loving", file: 'The Beatles - All My Loving (2009 Stereo Remaster).mp3', youtube:"",description:""}, 
+            {name :"Bee Gees - How Deep Is Your Love", file: 'Bee Gees - How Deep Is Your Love (Official Video).mp3', youtube:"",description:""}, 
         ]
+    },
+    {
+        category: 'პოპი', 
+        songs : 
+        [
+            {name :"Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars", file: 'Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars.mp3', youtube:"",description:""}, 
+            {name :"Maroon 5 - Moves Like Jagger ft ", file: 'Maroon 5 - Moves Like Jagger ft (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Gwen Stefani - The Sweet Escape ", file: 'Gwen Stefani - The Sweet Escape (Closed Captioned) ft. Akon.mp3', youtube:"",description:""}, 
+            {name :"Nelly - Dilemma (Official Music Video) ft", file: 'Nelly - Dilemma (Official Music Video) ft (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Blue Featuring Elton John - Sorry Seems To Be The Hardest Word ", file: 'Blue Featuring Elton John - Sorry Seems To Be The Hardest Word (Official Video).mp3', youtube:"",description:""}, 
+            {name :"Shakira - Hips Don't Lie ft. Wyclef Jean", file: "Shakira - Hips Don't Lie ft. Wyclef Jean.mp3", youtube:"",description:""}, 
+            {name :"Justin Timberlake - Cry Me A River ", file: 'Justin Timberlake - Cry Me A River (Official).mp3', youtube:"",description:""}, 
+            {name :"Britney Spears - Oops! აი დიდ ით ეგეინ", file: 'Britney Spears - Oops! (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Michael Jackson - Bad ", file: 'Michael Jackson - Bad (Shortened Version).mp3', youtube:"",description:""}, 
+            {name :"The Black Eyed Peas - Pump It", file: 'The Black Eyed Peas - Pump It (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Rihanna - Umbrella ", file: 'Rihanna - Umbrella (Orange Version) (Official Music Video) ft (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Beyoncé - Crazy In Love ft. JAY Z", file: 'Beyoncé - Crazy In Love ft. JAY Z.mp3', youtube:"",description:""}, 
+
+        ]
+        
+    },
+    {
+        category: 'დისკოოო', 
+        songs : 
+        [
+            {name :"Kool & The Gang - Get Down On It", file: 'Kool & The Gang - Get Down On It (Official Video).mp3', youtube:"",description:""}, 
+            {name :"Bee Gees - Stayin' Alive", file: "Bee Gees - Stayin' Alive (Official Music Video).mp3", youtube:"",description:""}, 
+            {name :"Gloria Gaynor - I Will Survive", file: 'Gloria Gaynor - I Will Survive [Official Video] 1978 [Audio iTunes Plus AAC M4A].mp3', youtube:"",description:""}, 
+            {name :"Ottawan - Hands Up", file: 'Ottawan - Hands Up.mp3', youtube:"",description:""}, 
+            {name :"Disco Dancer - Jimmi Jimmi Jimmi Aaja Aaja ", file: 'Disco Dancer - Jimmi Jimmi Jimmi Aaja Aaja Aaja Aaja Re Mere - Parvati Khan (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"ABBA - Gimme! Gimme! Gimme! (A Man After Midnight)", file: 'ABBA - Gimme! Gimme! Gimme! (A Man After Midnight) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Boney M Daddy cool", file: 'Boney M Daddy cool (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Village People - YMCA", file: 'Village People - YMCA OFFICIAL Music Video 1978.mp3', youtube:"",description:""}, 
+            {name :"I Want You Back - The Jackson 5", file: 'I Want You Back - The Jackson 5.mp3', youtube:"",description:""}, 
+            {name :"Modern Talking - Cheri Cheri Lady", file: 'Modern Talking - Cheri Cheri Lady (Official Music Video).mp3', youtube:"",description:""}, 
+            {name :"BOYS BOYS BOYS-SABRINA", file: 'BOYS BOYS BOYS-SABRINA (Official Video 1987) (mp3cut.net).mp3', youtube:"",description:""}, 
+            {name :"Earth, Wind & Fire - Boogie Wonderland", file: 'Earth, Wind & Fire - Boogie Wonderland (Official Video).mp3', youtube:"",description:""}, 
+        ]
+        
     },
 ];
 
