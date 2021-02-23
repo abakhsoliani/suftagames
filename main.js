@@ -252,7 +252,7 @@ var songsList = [
         songs : 
         [
             {name :"Queen - Radio Ga Ga", file: 'Queen - Radio Ga Ga (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"The Rolling Stones - (I Can't Get No) Satisfaction", file: "The Rolling Stones - (I Can't Get No) Satisfaction (Official Lyric Video).mp3", youtube:"",description:""}, 
+            {name :"The Rolling Stones - (I Can't Get No) Satisfaction", file: "The Rolling Stones - (I Cant Get No) Satisfaction (Official Lyric Video).mp3", youtube:"",description:""}, 
             {name :"Prince - Purple Rain ", file: 'Prince - Purple Rain (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Eagles - Hotel California", file: 'Eagles - Hotel California.mp3', youtube:"",description:""}, 
             {name :"Black Dog Led Zeppelin Lyrics", file: 'Black Dog Led Zeppelin Lyrics.mp3', youtube:"",description:""}, 
@@ -285,13 +285,13 @@ var songsList = [
         songs : 
         [
             {name :"Marvin Gaye - Lets get it on", file: 'Marvin Gaye - Lets get it on.mp3', youtube:"",description:""}, 
-            {name :"James Brown - It's A Man's Man's Man's World ", file: "James Brown - It's A Man's Man's Man's World (Official Video).mp3", youtube:"",description:""}, 
+            {name :"James Brown - It's A Man's Man's Man's World ", file: "James Brown - It's A Mans Mans Mans World (Official Video).mp3", youtube:"",description:""}, 
             {name :"Stevie Wonder I Just Called To Say I Love You", file: 'Stevie Wonder I Just Called To Say I Love You (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Michael Jackson - Billie Jean", file: 'Michael Jackson - Billie Jean (Official Video).mp3', youtube:"",description:""}, 
             {name :"Sade - Smooth Operator", file: 'Sade - Smooth Operator - Official - 1984.mp3', youtube:"",description:""}, 
             {name :"Barry White Never Never Gonna Give You Up Lyrics", file: 'Barry White Never Never Gonna Give You Up Lyrics.mp3', youtube:"",description:""}, 
-            {name :"Alicia Keys - Fallin'", file: "Alicia Keys - Fallin' (Official Video) (mp3cut.net).mp3", youtube:"",description:""},
-            {name :"Bobby Caldwell - What You Won't Do for Love ", file: "Bobby Caldwell - What You Won't Do for Love (Album Version).mp3", youtube:"",description:""}, 
+            {name :"Alicia Keys - Fallin'", file: "Alicia Keys - Fallin (Official Video) (mp3cut.net).mp3", youtube:"",description:""},
+            {name :"Bobby Caldwell - What You Won't Do for Love ", file: "Bobby Caldwell - What You Wont Do for Love (Album Version).mp3", youtube:"",description:""}, 
             {name :"George Michael - Careless Whisper", file: 'George Michael - Careless Whisper (Official Video).mp3', youtube:"",description:""}, 
 
         ]
@@ -300,18 +300,18 @@ var songsList = [
         category: '90-იანები', 
         songs : 
         [
-            {name :"Ricky Martin - Livin' La Vida Loca", file: "Ricky Martin - Livin' La Vida Loca.mp3", youtube:"",description:""}, 
+            {name :"Ricky Martin - Livin' La Vida Loca", file: "Ricky Martin - Livin La Vida Loca.mp3", youtube:"",description:""}, 
             {name :"Britney Spears -  ჰით მი ბებე ვან მორ თაიმ", file: 'Britney Spears -  (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Las Ketchup - The Ketchup Song (Asereje) ", file: 'Las Ketchup - The Ketchup Song (Asereje) (Spanglish Version) (Official Video).mp3', youtube:"",description:""}, 
             {name :"Barry White - Let The Music Play", file: 'Barry White - Let The Music Play.mp3', youtube:"",description:""}, 
-            {name :"Destiny's Child - Survivor (Official Music Video) ", file: "Destiny's Child - Survivor (Official Music Video) ft (mp3cut.net).mp3", youtube:"",description:""}, 
+            {name :"Destiny's Child - Survivor (Official Music Video) ", file: "Destinys Child - Survivor (Official Music Video) ft (mp3cut.net).mp3", youtube:"",description:""}, 
             {name :"NSYNC - Bye Bye Bye ", file: 'NSYNC - Bye Bye Bye (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Backstreet Boys - Everybody (Backstreet's Back) ", file: "Backstreet Boys - Everybody (Backstreet's Back) (Official Video) (mp3cut.net).mp3", youtube:"",description:""}, 
+            {name :"Backstreet Boys - Everybody (Backstreet's Back) ", file: "Backstreet Boys - Everybody (Backstreets Back) (Official Video) (mp3cut.net).mp3", youtube:"",description:""}, 
             {name :"The Cardigans - Lovefool ", file: 'The Cardigans - Lovefool (Official Music Video).mp3', youtube:"",description:""}, 
             {name :"Modjo - Lady (Hear Me Tonight)", file: 'Modjo - Lady (Hear Me Tonight) (Official Video).mp3', youtube:"",description:""}, 
             {name :"Mr პერზიდენტ კოკო ჯამბო", file: 'Mr (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Haddaway - What Is Love", file: 'Haddaway - What Is Love [Official] (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Bomfunk MC's - Freestyler ", file: "Bomfunk MC's - Freestyler (Video Original Version).mp3", youtube:"",description:""}, 
+            {name :"Bomfunk MC's - Freestyler ", file: "Bomfunk MCs - Freestyler (Video Original Version).mp3", youtube:"",description:""}, 
             {name :"Cher - Strong Enough ", file: 'Cher - Strong Enough (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
             
         ]
@@ -321,16 +321,16 @@ var songsList = [
         songs : 
         [
             {name :"Elton John - Can You Feel The Love Tonight", file: 'Elton John - Can You Feel The Love Tonight (Lyrics) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Elvis Presley - Can't Help Falling In Love", file: "Elvis Presley - Can't Help Falling In Love (Audio).mp3", youtube:"",description:""}, 
+            {name :"Elvis Presley - Can't Help Falling In Love", file: "Elvis Presley - Cant Help Falling In Love (Audio).mp3", youtube:"",description:""}, 
             {name :"(Everything I Do) I Do It For You", file: '(Everything I Do) I Do It For You (Official Music Video).mp3', youtube:"",description:""}, 
             {name :"John Legend - All of Me ", file: 'John Legend - All of Me (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"James Blunt - Goodbye My Lover", file: 'James Blunt - Goodbye My Lover [OFFICIAL VIDEO] (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Celine Dion - My Heart Will Go On", file: 'Celine Dion - My Heart Will Go On (HD).mp3', youtube:"",description:""}, 
             {name :"Mariah Carey - Without You", file: 'Mariah Carey - Without You (Live Video Version) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON", file: "NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON (mp3cut.net).mp3", youtube:"",description:""}, 
+            {name :"NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON", file: "NOTHINGS GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON (mp3cut.net).mp3", youtube:"",description:""}, 
             {name :"Joe Cocker - You Are So Beautiful", file: 'Joe Cocker - You Are So Beautiful (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Whitney Houston - I Will Always Love You", file: 'Whitney Houston - I Will Always Love You (Official 4K Video) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Aerosmith - I Don't Want to Miss a Thing", file: "Aerosmith - I Don't Want to Miss a Thing (Official HD Video).mp3", youtube:"",description:""}, 
+            {name :"Aerosmith - I Don't Want to Miss a Thing", file: "Aerosmith - I Dont Want to Miss a Thing (Official HD Video).mp3", youtube:"",description:""}, 
             {name :"The Beatles - All My Loving", file: 'The Beatles - All My Loving (2009 Stereo Remaster).mp3', youtube:"",description:""}, 
             {name :"Bee Gees - How Deep Is Your Love", file: 'Bee Gees - How Deep Is Your Love (Official Video).mp3', youtube:"",description:""}, 
         ]
@@ -344,7 +344,7 @@ var songsList = [
             {name :"Gwen Stefani - The Sweet Escape ", file: 'Gwen Stefani - The Sweet Escape (Closed Captioned) ft. Akon.mp3', youtube:"",description:""}, 
             {name :"Nelly - Dilemma (Official Music Video) ft", file: 'Nelly - Dilemma (Official Music Video) ft (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Blue Featuring Elton John - Sorry Seems To Be The Hardest Word ", file: 'Blue Featuring Elton John - Sorry Seems To Be The Hardest Word (Official Video).mp3', youtube:"",description:""}, 
-            {name :"Shakira - Hips Don't Lie ft. Wyclef Jean", file: "Shakira - Hips Don't Lie ft. Wyclef Jean.mp3", youtube:"",description:""}, 
+            {name :"Shakira - Hips Don't Lie ft. Wyclef Jean", file: "Shakira - Hips Dont Lie ft. Wyclef Jean.mp3", youtube:"",description:""}, 
             {name :"Justin Timberlake - Cry Me A River ", file: 'Justin Timberlake - Cry Me A River (Official).mp3', youtube:"",description:""}, 
             {name :"Britney Spears - Oops! აი დიდ ით ეგეინ", file: 'Britney Spears - Oops! (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Michael Jackson - Bad ", file: 'Michael Jackson - Bad (Shortened Version).mp3', youtube:"",description:""}, 
@@ -360,7 +360,7 @@ var songsList = [
         songs : 
         [
             {name :"Kool & The Gang - Get Down On It", file: 'Kool & The Gang - Get Down On It (Official Video).mp3', youtube:"",description:""}, 
-            {name :"Bee Gees - Stayin' Alive", file: "Bee Gees - Stayin' Alive (Official Music Video).mp3", youtube:"",description:""}, 
+            {name :"Bee Gees - Stayin' Alive", file: "Bee Gees - Stayin Alive (Official Music Video).mp3", youtube:"",description:""}, 
             {name :"Gloria Gaynor - I Will Survive", file: 'Gloria Gaynor - I Will Survive [Official Video] 1978 [Audio iTunes Plus AAC M4A].mp3', youtube:"",description:""}, 
             {name :"Ottawan - Hands Up", file: 'Ottawan - Hands Up.mp3', youtube:"",description:""}, 
             {name :"Disco Dancer - Jimmi Jimmi Jimmi Aaja Aaja ", file: 'Disco Dancer - Jimmi Jimmi Jimmi Aaja Aaja Aaja Aaja Re Mere - Parvati Khan (mp3cut.net).mp3', youtube:"",description:""}, 
