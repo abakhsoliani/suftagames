@@ -578,7 +578,7 @@ $(document).ready(function(){
         var string = "<div class='overlay'>";
         string +="<div data-name='"+name+"' class='song-popup'>დაიწყე მოსმენა, როცა ვინმე მიხვდება სიმღერას დააჭირე პაუზას<br> თუ გამოიცნო ყველა სვამს მის გარდა, თუ არა თვითონ სვამს!<br><br> <button class='main-button play'>დაწყება</button><br><button class='song-answer secondary-btn'>პასუხის ნახვა</button> </div>";
         
-        string+="<audio id='audio'><source src='"+file+"' type='audio/mpeg'></audio></div>";
+        string+="<audio id='audio'><source src=\""+file+"\" type='audio/mpeg'></audio></div>";
         return string;
     }
 
