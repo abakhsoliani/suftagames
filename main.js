@@ -621,6 +621,8 @@ $(document).ready(function(){
 
 
     $(".text-content .main-button").click(function(){
+        window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
+
         if(!$(".text-content .main-button").hasClass("disabled")) {
             $("body").addClass("select-games");
             $(".text-content").remove();
@@ -636,6 +638,8 @@ $(document).ready(function(){
 
     $("#ivenever").click(function(){
         current_game = 0;
+        window.history.pushState('ivenever', 'მე არასდროს', '/ivenever');
+
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
         setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
@@ -645,6 +649,8 @@ $(document).ready(function(){
 
     $("#singsomething").click(function(){
         current_game = 3;
+        window.history.pushState('singsong', 'იმღერე რამე', '/singsong');
+
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
         setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
@@ -654,6 +660,8 @@ $(document).ready(function(){
 
     $("#mostlikely").click(function(){
         current_game = 1;
+        window.history.pushState('mostlikely', 'ვინ გგონინა', '/mostlikely');
+
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
         setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
@@ -661,6 +669,8 @@ $(document).ready(function(){
     });
 
     $("#drinkcard").click(function(){
+        window.history.pushState('cards', 'კარტები', '/cards');
+
         current_game = 2;
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
@@ -678,10 +688,12 @@ $(document).ready(function(){
     $(".main-button.continue").click(function(){
         $(".rules-container").removeClass("active");
         if(current_game == 0){
+
             $(".game-container").html(getRandomIveNever());
             setTimeout(function(){ $(".ivenever-card").addClass("active"); }, 600);
         } else if(current_game==3){
             $(".game-container").html(getSongContent());
+            
         } else if(current_game==1){
             $(".game-container").html(getMostLikelyContent());
             setTimeout(function(){ $(".mostlikely-card").addClass("active"); }, 600);
@@ -780,6 +792,7 @@ $(document).ready(function(){
 
     $("body").on("click"," .other-games, .go-back, .logo", function(){
         if(!$("body").hasClass("terms-done")) return;
+        window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
         playStatus = 0;
         if(document.getElementById("audio"))document.getElementById("audio").pause();
         $(".overlay").remove();
