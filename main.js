@@ -1,8 +1,8 @@
 var rules = [
     'ამ თამაშს ზედმეტი წარდგენა არ ჭირდება',
-    'სასურველია ითამაშოს მინიმუმ 4-მა ადამიანმა.  ყველა თავისთვის იღებს გადაწყვეტილებას იმის შესახებ თუ ვის შეესაბამება მოცემული პირობა ყველაზე მეტად, ითვლით 3-დან 1-მდე და ვიშვერთ თითს ჩაფიქრებული ადამიანისკენ. სვამს ის, ვინც ყველაზე მეტ თითს მიიღებს!',
+    'ყველა თავისთვის იღებს გადაწყვეტილებას იმის შესახებ თუ ვის შეესაბამება მოცემული პირობა ყველაზე მეტად, ითვლით 3-დან 1-მდე და ვიშვერთ თითს ჩაფიქრებული ადამიანისკენ. <br><br> სვამს ის, ვინც ყველაზე მეტ თითს მიიღებს!',
     'ეს თამაში ყველაზე მარტივი ხერხია სწრაფად შესაზარხოშებლად. <br> თამაშის წესები მარტივია, ყველა კარტს თავისი დალევი წესი აქვს <br> რიგრიგობით გახსენით ახალი კარტი და შეასრულეთ მასზე ამოსული პირობები',
-    'გამოიცანი სიმღერა სასურველი კატეგორიიდან<br> ან დალიე!'
+    'ვირჩევთ ,,წამყვანს", რომელიც უზრუნვეყლოფს სიმღერების ჩართვა-დაპაუზებას. ვინც გამოიცნობს სიმღერის სახელს ან მომღერალს არ სვამს, ხოლო დანარჩენი ყველა სვამს სასურველ დოზას. თუ ვერ გამოიცნობს, მხოლოდ ის სვამს განსხვავებულს! თამაშში მონაწილეობა შეუძლია წამყვანსაც'
 ]
 
 var ivenever = [
@@ -529,7 +529,7 @@ $(document).ready(function(){
 
         mostlikely.splice(randNumber, 1);
         
-        return "<div class='mostlikely-card'><div>ყველაზე მეტად ვინ გგონია რომ,<br> "+cardValue+"</div><button class='main-button'>შემდეგი პირობა</button></div>";
+        return "<div class='mostlikely-card'><div>"+cardValue+"</div><button class='main-button'>შემდეგი პირობა</button></div>";
 
     }
 
@@ -621,7 +621,6 @@ $(document).ready(function(){
 
 
     $(".text-content .main-button").click(function(){
-        window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
         gtag('event', 'page_view', {
             page_title: 'თამაშების არჩევა',
             page_location: '/choosegames',
@@ -644,7 +643,6 @@ $(document).ready(function(){
 
     $("#ivenever").click(function(){
         current_game = 0;
-        window.history.pushState('ivenever', 'მე არასდროს', '/ivenever');
         gtag('event', 'page_view', {
             page_title: 'მე არასდროს',
             page_location: '/ivenever',
@@ -660,7 +658,6 @@ $(document).ready(function(){
 
     $("#singsomething").click(function(){
         current_game = 3;
-        window.history.pushState('singsong', 'იმღერე რამე', '/singsong');
         gtag('event', 'page_view', {
             page_title: 'იმღერე რამე',
             page_location: '/singsong',
@@ -677,7 +674,6 @@ $(document).ready(function(){
 
     $("#mostlikely").click(function(){
         current_game = 1;
-        window.history.pushState('mostlikely', 'ვინ გგონინა', '/mostlikely');
         gtag('event', 'page_view', {
             page_title: 'ვინ გგონია',
             page_location: '/mostlikely',
@@ -691,7 +687,6 @@ $(document).ready(function(){
     });
 
     $("#drinkcard").click(function(){
-        window.history.pushState('cards', 'კარტები', '/cards');
         gtag('event', 'page_view', {
             page_title: 'კარტები',
             page_location: '/cards',
@@ -819,8 +814,7 @@ $(document).ready(function(){
     });
 
     $("body").on("click"," .other-games, .go-back, .logo", function(){
-        if(!$("body").hasClass("terms-done")) return;
-        window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
+        if(!$("body").hasClass("terms-done") || $("body").hasClass('select-games')) return;
         gtag('event', 'page_view', {
             page_title: 'თამაშების არჩევა',
             page_location: '/choosegames',
