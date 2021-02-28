@@ -622,6 +622,10 @@ $(document).ready(function(){
 
     $(".text-content .main-button").click(function(){
         window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
+        ga('send', {
+            hitType: 'pageview',
+            page: location.pathname
+          });
 
         if(!$(".text-content .main-button").hasClass("disabled")) {
             $("body").addClass("select-games");
@@ -639,6 +643,10 @@ $(document).ready(function(){
     $("#ivenever").click(function(){
         current_game = 0;
         window.history.pushState('ivenever', 'მე არასდროს', '/ivenever');
+        ga('send', {
+            hitType: 'pageview',
+            page: location.pathname
+          });
 
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
@@ -650,6 +658,10 @@ $(document).ready(function(){
     $("#singsomething").click(function(){
         current_game = 3;
         window.history.pushState('singsong', 'იმღერე რამე', '/singsong');
+        ga('send', {
+            hitType: 'pageview',
+            page: location.pathname
+          });
 
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
@@ -661,6 +673,10 @@ $(document).ready(function(){
     $("#mostlikely").click(function(){
         current_game = 1;
         window.history.pushState('mostlikely', 'ვინ გგონინა', '/mostlikely');
+        ga('send', {
+            hitType: 'pageview',
+            page: location.pathname
+          });
 
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
@@ -670,6 +686,10 @@ $(document).ready(function(){
 
     $("#drinkcard").click(function(){
         window.history.pushState('cards', 'კარტები', '/cards');
+        ga('send', {
+            hitType: 'pageview',
+            page: location.pathname
+          });
 
         current_game = 2;
         $(".games-container").removeClass("active");
@@ -793,6 +813,10 @@ $(document).ready(function(){
     $("body").on("click"," .other-games, .go-back, .logo", function(){
         if(!$("body").hasClass("terms-done")) return;
         window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
+        ga('send', {
+            hitType: 'pageview',
+            page: location.pathname
+          });
         playStatus = 0;
         if(document.getElementById("audio"))document.getElementById("audio").pause();
         $(".overlay").remove();
