@@ -622,9 +622,11 @@ $(document).ready(function(){
 
     $(".text-content .main-button").click(function(){
         window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
-        ga('send', {
-            hitType: 'pageview',
-            page: location.pathname
+        gtag('event', 'page_view', {
+            page_title: 'თამაშების არჩევა',
+            page_location: '/choosegames',
+            page_path: '/choosegames',
+            send_to: 'G-VPQHD24GV4'
           });
 
         if(!$(".text-content .main-button").hasClass("disabled")) {
@@ -643,11 +645,12 @@ $(document).ready(function(){
     $("#ivenever").click(function(){
         current_game = 0;
         window.history.pushState('ivenever', 'მე არასდროს', '/ivenever');
-        ga('send', {
-            hitType: 'pageview',
-            page: location.pathname
+        gtag('event', 'page_view', {
+            page_title: 'მე არასდროს',
+            page_location: '/ivenever',
+            page_path: '/ivenever',
+            send_to: 'G-VPQHD24GV4'
           });
-
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
         setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
@@ -658,9 +661,11 @@ $(document).ready(function(){
     $("#singsomething").click(function(){
         current_game = 3;
         window.history.pushState('singsong', 'იმღერე რამე', '/singsong');
-        ga('send', {
-            hitType: 'pageview',
-            page: location.pathname
+        gtag('event', 'page_view', {
+            page_title: 'იმღერე რამე',
+            page_location: '/singsong',
+            page_path: '/singsong',
+            send_to: 'G-VPQHD24GV4'
           });
 
         $(".games-container").removeClass("active");
@@ -673,11 +678,12 @@ $(document).ready(function(){
     $("#mostlikely").click(function(){
         current_game = 1;
         window.history.pushState('mostlikely', 'ვინ გგონინა', '/mostlikely');
-        ga('send', {
-            hitType: 'pageview',
-            page: location.pathname
+        gtag('event', 'page_view', {
+            page_title: 'ვინ გგონია',
+            page_location: '/mostlikely',
+            page_path: '/mostlikely',
+            send_to: 'G-VPQHD24GV4'
           });
-
         $(".games-container").removeClass("active");
         $(".rules").html(rules[current_game]);
         setTimeout(function(){ $(".rules-container").addClass("active"); }, 400);
@@ -686,9 +692,11 @@ $(document).ready(function(){
 
     $("#drinkcard").click(function(){
         window.history.pushState('cards', 'კარტები', '/cards');
-        ga('send', {
-            hitType: 'pageview',
-            page: location.pathname
+        gtag('event', 'page_view', {
+            page_title: 'კარტები',
+            page_location: '/cards',
+            page_path: '/cards',
+            send_to: 'G-VPQHD24GV4'
           });
 
         current_game = 2;
@@ -813,9 +821,11 @@ $(document).ready(function(){
     $("body").on("click"," .other-games, .go-back, .logo", function(){
         if(!$("body").hasClass("terms-done")) return;
         window.history.pushState('choosegames', 'თამაშების არჩევა', '/choosegames');
-        ga('send', {
-            hitType: 'pageview',
-            page: location.pathname
+        gtag('event', 'page_view', {
+            page_title: 'თამაშების არჩევა',
+            page_location: '/choosegames',
+            page_path: '/choosegames',
+            send_to: 'G-VPQHD24GV4'
           });
         playStatus = 0;
         if(document.getElementById("audio"))document.getElementById("audio").pause();
