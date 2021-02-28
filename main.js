@@ -779,7 +779,7 @@ $(document).ready(function(){
     });
 
     $("body").on("click"," .other-games, .go-back, .logo", function(){
-        
+        if(!$("body").hasClass("terms-done")) return;
         playStatus = 0;
         if(document.getElementById("audio"))document.getElementById("audio").pause();
         $(".overlay").remove();
