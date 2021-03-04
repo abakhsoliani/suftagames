@@ -235,7 +235,6 @@ var songsList = [
             {name :"07 - ვია 75 პირველი სიყვარული 1982 via 75 First Love", file: '07 - ვია 75 პირველი სიყვარული 1982 via 75 First Love.mp3', youtube:"",description:""}, 
             {name :"Aleksandre Basilaia Gza Dagviloce", file: 'Aleksandre Basilaia Gza Dagviloce )) (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"მაყვალა & არჩილ ჩიხლაძეები - კართან მოდგა შემოდგომა (1976) ", file: 'მაყვალა & არჩილ ჩიხლაძეები - კართან მოდგა შემოდგომა (1976).mp3', youtube:"",description:""}, 
-            {name :"რომა რცხილაძე ნატვრის ხე", file: 'რომა რცხილაძე ნატვრის ხე.mp3', youtube:"",description:""}, 
 
         ]
         
@@ -269,7 +268,6 @@ var songsList = [
             {name :"Black Dog Led Zeppelin Lyrics", file: 'Black Dog Led Zeppelin Lyrics.mp3', youtube:"",description:""}, 
             {name :"ACDC - Highway to Hell ", file: 'ACDC - Highway to Hell (Official Video).mp3', youtube:"",description:""}, 
             {name :"Aerosmith - Crazy", file: 'Aerosmith - Crazy (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Nirvana - Come As You Are", file: 'Nirvana - Come As You Are (mp3cut.net).mp3', youtube:"",description:""}, 
 
         ]
     },
@@ -277,11 +275,9 @@ var songsList = [
         category: 'ჰიპ ჰოპი', 
         songs : 
         [
-            {name :"Nas - I Can", file: 'Nas - I Can (Official HD Video).mp3', youtube:"",description:""}, 
             {name :"Puff Daddy", file: 'Puff Daddy [feat (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Biggie Smalls - Hypnotize ", file: 'Biggie Smalls - Hypnotize (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"2pac feat Dr", file: '2pac feat Dr (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"50 Cent - Window Shopper ", file: '50 Cent - Window Shopper (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Mattafix - Big City Life", file: 'Mattafix - Big City Life.mp3', youtube:"",description:""}, 
             {name :"Outkast - Ms ჟეკსონ", file: 'Outkast - Ms (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Afroman - Because I Got High", file: 'Afroman - Because I Got High (Official Video).mp3', youtube:"",description:""},
@@ -315,8 +311,6 @@ var songsList = [
             {name :"Britney Spears -  ჰით მი ბებე ვან მორ თაიმ", file: 'Britney Spears -  (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Las Ketchup - The Ketchup Song (Asereje) ", file: 'Las Ketchup - The Ketchup Song (Asereje) (Spanglish Version) (Official Video).mp3', youtube:"",description:""}, 
             {name :"Barry White - Let The Music Play", file: 'Barry White - Let The Music Play.mp3', youtube:"",description:""}, 
-            {name :"Destiny's Child - Survivor (Official Music Video) ", file: "Destinys Child - Survivor (Official Music Video) ft (mp3cut.net).mp3", youtube:"",description:""}, 
-            {name :"NSYNC - Bye Bye Bye ", file: 'NSYNC - Bye Bye Bye (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Backstreet Boys - Everybody (Backstreet's Back) ", file: "Backstreet Boys - Everybody (Backstreets Back) (Official Video) (mp3cut.net).mp3", youtube:"",description:""}, 
             {name :"The Cardigans - Lovefool ", file: 'The Cardigans - Lovefool (Official Music Video).mp3', youtube:"",description:""}, 
             {name :"Modjo - Lady (Hear Me Tonight)", file: 'Modjo - Lady (Hear Me Tonight) (Official Video).mp3', youtube:"",description:""}, 
@@ -327,25 +321,25 @@ var songsList = [
             
         ]
     },
-    {
-        category: 'სიყვარულზე', 
-        songs : 
-        [
-            {name :"Elton John - Can You Feel The Love Tonight", file: 'Elton John - Can You Feel The Love Tonight (Lyrics) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Elvis Presley - Can't Help Falling In Love", file: "Elvis Presley - Cant Help Falling In Love (Audio).mp3", youtube:"",description:""}, 
-            {name :"(Everything I Do) I Do It For You", file: '(Everything I Do) I Do It For You (Official Music Video).mp3', youtube:"",description:""}, 
-            {name :"John Legend - All of Me ", file: 'John Legend - All of Me (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"James Blunt - Goodbye My Lover", file: 'James Blunt - Goodbye My Lover [OFFICIAL VIDEO] (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Celine Dion - My Heart Will Go On", file: 'Celine Dion - My Heart Will Go On (HD).mp3', youtube:"",description:""}, 
-            {name :"Mariah Carey - Without You", file: 'Mariah Carey - Without You (Live Video Version) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON", file: "NOTHINGS GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON (mp3cut.net).mp3", youtube:"",description:""}, 
-            {name :"Joe Cocker - You Are So Beautiful", file: 'Joe Cocker - You Are So Beautiful (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Whitney Houston - I Will Always Love You", file: 'Whitney Houston - I Will Always Love You (Official 4K Video) (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Aerosmith - I Don't Want to Miss a Thing", file: "Aerosmith - I Dont Want to Miss a Thing (Official HD Video).mp3", youtube:"",description:""}, 
-            {name :"The Beatles - All My Loving", file: 'The Beatles - All My Loving (2009 Stereo Remaster).mp3', youtube:"",description:""}, 
-            {name :"Bee Gees - How Deep Is Your Love", file: 'Bee Gees - How Deep Is Your Love (Official Video).mp3', youtube:"",description:""}, 
-        ]
-    },
+    // {
+    //     category: 'სიყვარულზე', 
+    //     songs : 
+    //     [
+    //         {name :"Elton John - Can You Feel The Love Tonight", file: 'Elton John - Can You Feel The Love Tonight (Lyrics) (mp3cut.net).mp3', youtube:"",description:""}, 
+    //         {name :"Elvis Presley - Can't Help Falling In Love", file: "Elvis Presley - Cant Help Falling In Love (Audio).mp3", youtube:"",description:""}, 
+    //         {name :"(Everything I Do) I Do It For You", file: '(Everything I Do) I Do It For You (Official Music Video).mp3', youtube:"",description:""}, 
+    //         {name :"John Legend - All of Me ", file: 'John Legend - All of Me (Official Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+    //         {name :"James Blunt - Goodbye My Lover", file: 'James Blunt - Goodbye My Lover [OFFICIAL VIDEO] (mp3cut.net).mp3', youtube:"",description:""}, 
+    //         {name :"Celine Dion - My Heart Will Go On", file: 'Celine Dion - My Heart Will Go On (HD).mp3', youtube:"",description:""}, 
+    //         {name :"Mariah Carey - Without You", file: 'Mariah Carey - Without You (Live Video Version) (mp3cut.net).mp3', youtube:"",description:""}, 
+    //         {name :"NOTHING'S GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON", file: "NOTHINGS GONNA CHANGE MY LOVE FOR YOU (with lyrics) - GEORGE BENSON (mp3cut.net).mp3", youtube:"",description:""}, 
+    //         {name :"Joe Cocker - You Are So Beautiful", file: 'Joe Cocker - You Are So Beautiful (mp3cut.net).mp3', youtube:"",description:""}, 
+    //         {name :"Whitney Houston - I Will Always Love You", file: 'Whitney Houston - I Will Always Love You (Official 4K Video) (mp3cut.net).mp3', youtube:"",description:""}, 
+    //         {name :"Aerosmith - I Don't Want to Miss a Thing", file: "Aerosmith - I Dont Want to Miss a Thing (Official HD Video).mp3", youtube:"",description:""}, 
+    //         {name :"The Beatles - All My Loving", file: 'The Beatles - All My Loving (2009 Stereo Remaster).mp3', youtube:"",description:""}, 
+    //         {name :"Bee Gees - How Deep Is Your Love", file: 'Bee Gees - How Deep Is Your Love (Official Video).mp3', youtube:"",description:""}, 
+    //     ]
+    // },
     {
         category: 'პოპი', 
         songs : 
@@ -361,7 +355,6 @@ var songsList = [
             {name :"Michael Jackson - Bad ", file: 'Michael Jackson - Bad (Shortened Version).mp3', youtube:"",description:""}, 
             {name :"The Black Eyed Peas - Pump It", file: 'The Black Eyed Peas - Pump It (Official Music Video) (mp3cut.net).mp3', youtube:"",description:""}, 
             {name :"Rihanna - Umbrella ", file: 'Rihanna - Umbrella (Orange Version) (Official Music Video) ft (mp3cut.net).mp3', youtube:"",description:""}, 
-            {name :"Beyoncé - Crazy In Love ft. JAY Z", file: 'Beyoncé - Crazy In Love ft. JAY Z.mp3', youtube:"",description:""}, 
 
         ]
         
