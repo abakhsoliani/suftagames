@@ -523,6 +523,13 @@ button.song-answer {
     display:block;
 }
 
+.nav img {
+    width: 3em;
+    position: relative;
+    margin-top: -2em;
+    top: 0.79em;
+}
+
 @keyframes float {
     0% {
       transform: translate(0px, 0px);
